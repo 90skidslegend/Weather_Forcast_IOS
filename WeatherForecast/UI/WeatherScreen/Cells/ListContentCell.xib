@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListContentCell" id="tpP-Fr-Icu" customClass="ListContentCell" customModule="WeatherForecast" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tpP-Fr-Icu" id="Mt1-K5-6Wi">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C6V-0f-vqg">
+                        <rect key="frame" x="15" y="5" width="363" height="34"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lc9-YW-bcv">
+                                <rect key="frame" x="9.9999999999999964" y="6.6666666666666643" width="45.666666666666657" height="21"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4X0-Tv-nA7">
+                                <rect key="frame" x="314" y="7.6666666666666661" width="39" height="18.666666666666671"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lc9-YW-bcv" firstAttribute="leading" secondItem="C6V-0f-vqg" secondAttribute="leading" constant="10" id="GiK-ad-vlt"/>
+                            <constraint firstAttribute="trailing" secondItem="4X0-Tv-nA7" secondAttribute="trailing" constant="10" id="btk-Ij-XhM"/>
+                            <constraint firstItem="lc9-YW-bcv" firstAttribute="centerY" secondItem="C6V-0f-vqg" secondAttribute="centerY" id="ifE-0E-PDB"/>
+                            <constraint firstItem="4X0-Tv-nA7" firstAttribute="centerY" secondItem="C6V-0f-vqg" secondAttribute="centerY" id="lac-5x-VAf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="C6V-0f-vqg" firstAttribute="leading" secondItem="Mt1-K5-6Wi" secondAttribute="leading" constant="15" id="0Bf-eC-yAF"/>
+                    <constraint firstAttribute="trailing" secondItem="C6V-0f-vqg" secondAttribute="trailing" constant="15" id="2V2-76-4G4"/>
+                    <constraint firstItem="C6V-0f-vqg" firstAttribute="top" secondItem="Mt1-K5-6Wi" secondAttribute="top" constant="5" id="QXF-mG-fCE"/>
+                    <constraint firstAttribute="bottom" secondItem="C6V-0f-vqg" secondAttribute="bottom" constant="5" id="jWX-6D-YOH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="mainView" destination="Mt1-K5-6Wi" id="743-ih-Pym"/>
+                <outlet property="supportView" destination="C6V-0f-vqg" id="xKE-dG-yV0"/>
+                <outlet property="title" destination="lc9-YW-bcv" id="Iy8-G4-vnX"/>
+                <outlet property="value" destination="4X0-Tv-nA7" id="8Io-YU-IQc"/>
+            </connections>
+            <point key="canvasLocation" x="215" y="15"/>
+        </tableViewCell>
+    </objects>
+</document>
